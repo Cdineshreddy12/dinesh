@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FaRegUserCircle, FaLock, FaEnvelope } from "react-icons/fa";
 import signupImage from '../assets/signup.jpeg';
-//this is register component
+
 const AuthForm = () => {
   const [isLogin, setIsLogin] = useState(true);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
