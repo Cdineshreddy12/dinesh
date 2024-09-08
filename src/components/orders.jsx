@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaShoppingBag, FaCheckCircle, FaTruck, FaClock } from 'react-icons/fa';
 import { useSelector } from 'react-redux';
-
+// this is order component
 const OrderStepper = ({ currentStep }) => {
   const steps = [
     { icon: FaShoppingBag, label: 'Ordered' },
