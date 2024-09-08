@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { FaCheckCircle, FaShoppingBasket, FaTruck, FaClock, FaEdit, FaTrash, FaSearch, FaChevronDown } from 'react-icons/fa';
 
+
+// admin panel component
 const OrderStatus = ({ status }) => {
   const statusConfig = {
     0: { icon: FaClock, label: 'Pending', color: 'text-yellow-600', bgColor: 'bg-yellow-100' },
