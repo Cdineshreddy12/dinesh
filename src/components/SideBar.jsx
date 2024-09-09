@@ -4,7 +4,8 @@ import { FaBars, FaChevronRight, FaTimes, FaArrowAltCircleLeft, FaArrowAltCircle
 import { useDispatch, useSelector } from 'react-redux';
 import { toggleSide } from '../ReduxStore/SisebarSlice';
 import { setActiveCategory } from '../ReduxStore/CategorySlice';
-
+import { GiHamburgerMenu } from "react-icons/gi";
+import { IoClose } from "react-icons/io5";
 export default function SideBar({ isMobile }) {
   const dispatch = useDispatch();
   const isOpen = useSelector((state) => state.sidebar.side);
@@ -74,12 +75,12 @@ export default function SideBar({ isMobile }) {
   return (
     <aside className={`fixed top-32 left-0 ${isOpen ? 'w-1/4' : 'w-16'} h-[calc(100vh-8rem)] bg-white shadow-lg overflow-y-auto transition-all duration-500 ease-in-out`}>
       <div className={`flex justify-between items-start p-4 ${isOpen ? '' : 'flex-col'}`}>
-        {isOpen && <h2 className="text-2xl font-bold mb-6 text-blue-600 border-b pb-2">Categories</h2>}
+        {isOpen && <h2 className="text-2xl font-bold mb-6 text-blue-400 border-b pb-2">Categories</h2>}
         <button 
-          className={`text-3xl text-blue-600 hover:text-blue-800 transition-transform duration-300 `} 
+          className={`text-3xl text-blue-400 hover:text-blue-600 transition-transform duration-300 `} 
           onClick={handleToggleSidebar}
         >
-          {!isOpen ? <FaArrowAltCircleRight /> : <FaArrowAltCircleLeft />}
+          {!isOpen ? <GiHamburgerMenu /> : <IoClose />}
         </button>
       </div>
       <div className={`${isOpen ? 'px-4' : 'px-2'}`}>

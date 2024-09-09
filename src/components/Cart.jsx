@@ -43,21 +43,20 @@ const Cart = () => {
 
   return (
     <div className={`container mx-auto p-4 md:p-6 transition-all duration-500 ease-in-out ${
-      isMobile ? "mt-20" : isOpen ? "max-w-[70%] ml-[30%] mt-28" : "w-[90%] ml-[5%] mt-28"
+      isMobile ? "mt-20" : isOpen ? "max-w-[70%] ml-[30%] mt-28" : "w-[95%] ml-[5%] mt-28"
     }`}>
 
       <div className="relative w-full h-16 mb-4 overflow-hidden rounded-xl">
           {/* Background with animated gradient */}
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-400 via-blue-500 to-blue-600 animate-gradient-x"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-300 to-blue-400 animate-gradient-x"></div>
           
           {/* Frosted glass effect container */}
-          <div className="absolute inset-0 backdrop-blur-sm bg-white bg-opacity-20 flex items-center justify-center">
+          <div className="absolute inset-0 backdrop-blur-sm bg-white bg-opacity-10 flex items-center justify-center">
             {/* Content */}
             <div className="text-center z-10">
               <h2 className="text-4xl font-bold text-white mb-2 drop-shadow-lg">
-                   Your Orders
+                   Your Cart
               </h2>
-              <div className="w-24 h-1 bg-white mx-auto rounded-full shadow-lg"></div>
             </div>
             
             {/* Decorative elements */}
@@ -65,10 +64,7 @@ const Cart = () => {
             <div className="absolute bottom-0 right-0 w-40 h-40 bg-blue-300 bg-opacity-20 rounded-full translate-x-1/3 translate-y-1/3 blur-md"></div>
           </div>
           
-          {/* Enhanced continuous shimmering effect */}
-          <div className="absolute inset-0">
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-30 animate-shimmer-continuous"></div>
-          </div>
+          
         </div>
 
 
@@ -131,7 +127,7 @@ const Cart = () => {
           </div>
           <button
             onClick={handlePayment}
-            className="w-full bg-blue-600 mb-16 text-white py-3 rounded-lg text-base md:text-lg font-semibold hover:bg-blue-700 transition-colors duration-300"
+            className="w-full bg-blue-400 mb-16 text-white py-3 rounded-lg text-base md:text-lg font-semibold hover:bg-blue-500 transition-colors duration-300"
           >
             Proceed to Checkout
           </button>

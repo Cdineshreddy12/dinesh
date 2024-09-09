@@ -106,7 +106,7 @@ const AuthForm = () => {
 };
 
 const FormContent = ({ isLogin, formData, handleChange, handleSubmit, toggleForm }) => (
-  <div className="bg-white p-6 rounded-xl shadow-lg">
+  <div className="bg-white  p-6 rounded-xl shadow-lg">
     <form onSubmit={handleSubmit} className="space-y-4">
       {!isLogin && (
         <InputField
@@ -156,14 +156,14 @@ const FormContent = ({ isLogin, formData, handleChange, handleSubmit, toggleForm
 
 const InputField = ({ icon, type, name, placeholder, value, onChange }) => (
   <div className="relative">
-    <span className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-gray-400">
+    <span className="absolute  inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-gray-800">
       {icon}
     </span>
     <input
       type={type}
       name={name}
       required
-      className="appearance-none rounded-md relative block w-full px-3 py-2 pl-10 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 text-sm"
+      className="appearance-none border border-2 rounded-md relative block w-full px-3 py-2 pl-10  border-indigo-300 placeholder-gray-700 text-gray-900 focus:outline-none focus:ring-indigo-700 focus:border-indigo-700 focus:z-10 text-sm"
       placeholder={placeholder}
       value={value}
       onChange={onChange}

@@ -71,7 +71,7 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="bg-blue-600 fixed w-full text-white mt-16 z-50">
+    <nav className="bg-[#1A98FF] fixed w-full text-white mt-16 z-50">
       <div className="hidden md:block container mx-auto px-4">
         {isMobile && (
           <div className="flex justify-between items-center py-2">
@@ -88,7 +88,7 @@ const Navigation = () => {
           {categories.map((category, index) => (
             <li 
               key={index} 
-              className={`relative ${isMobile ? 'mb-2' : 'hover:bg-blue-800'} px-2 py-1 font-bold rounded cursor-pointer`}
+              className={`relative ${isMobile ? 'mb-2' : 'hover:bg-blue-300 text-black'} px-2 py-1 font-bold rounded cursor-pointer`}
               onMouseEnter={() => !isMobile && setHoveredCategory(index)}
               onMouseLeave={() => !isMobile && setHoveredCategory(null)}
               onClick={() => toggleCategory(index)}

@@ -101,7 +101,7 @@ const OrdersComponent = () => {
 
       <div className="relative w-full h-16 mt-24 mb-4 overflow-hidden rounded-xl">
           {/* Background with animated gradient */}
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-400 via-blue-500 to-blue-600 animate-gradient-x"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-300 via-blue-300 to-blue-400 animate-gradient-x"></div>
           
           {/* Frosted glass effect container */}
           <div className="absolute inset-0 backdrop-blur-sm bg-white bg-opacity-20 flex items-center justify-center">
@@ -110,7 +110,6 @@ const OrdersComponent = () => {
               <h2 className="text-4xl font-bold text-white mb-2 drop-shadow-lg">
                    Your Orders
               </h2>
-              <div className="w-24 h-1 bg-white mx-auto rounded-full shadow-lg"></div>
             </div>
             
             {/* Decorative elements */}
@@ -118,10 +117,7 @@ const OrdersComponent = () => {
             <div className="absolute bottom-0 right-0 w-40 h-40 bg-blue-300 bg-opacity-20 rounded-full translate-x-1/3 translate-y-1/3 blur-md"></div>
           </div>
           
-          {/* Enhanced continuous shimmering effect */}
-          <div className="absolute inset-0">
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-30 animate-shimmer-continuous"></div>
-          </div>
+         
         </div>
 
         <CurrentOrder order={currentOrder} />
